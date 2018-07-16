@@ -18,6 +18,7 @@ const orderSummary = (props) => {
             <ul>
                 { ingredientSummary }
             </ul>
+            <p><strong>Цена: {props.price.toFixed(2)} грн.</strong></p>
             <p>Сделать заказ?</p>
             <Button btnType="Danger" clicked={props.purchaseCanceled}>Отменить</Button>
             <Button btnType="Success" clicked={props.purchaseContinued}>Подтвердить</Button>
