@@ -17,7 +17,9 @@ const orderSummary = (props) => {
             <ul>
                 { ingredientSummary }
             </ul>
-            <p>Продолжить проверку?</p>
+            <p>Сделать заказ?</p>
+            <button>Отменить</button>
+            <button>Подтвердить</button>
         </Aux>
     );
 };
