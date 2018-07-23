@@ -6,7 +6,9 @@ import Logo from '../../Logo/Logo';
 const toolbar = (props) => (
     <header className={classes.Toolbar}>
         <div>Меню</div>
-        <Logo />
+        <div className={classes.Logo}>
+            <Logo />
+        </div>
         <nav>
             <NavigationItems />
         </nav>
