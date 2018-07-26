@@ -19,15 +19,15 @@ class OrderSummary extends Component {
         });
         return (
             <Aux>
-                <h3>Ваш Заказ</h3>
-                <p>Вкусный бургер со следующими ингредиентами:</p>
+                <h3>Your order</h3>
+                <p>Delicious burger with the following ingredients:</p>
                 <ul>
                     { ingredientSummary }
                 </ul>
-                <p><strong>Цена: {this.props.price.toFixed(2)} грн.</strong></p>
-                <p>Сделать заказ?</p>
-                <Button btnType="Danger" clicked={this.props.purchaseCanceled}>Отменить</Button>
-                <Button btnType="Success" clicked={this.props.purchaseContinued}>Подтвердить</Button>
+                <p><strong>Price: {this.props.price.toFixed(2)} uah.</strong></p>
+                <p>Make an order?</p>
+                <Button btnType="Danger" clicked={this.props.purchaseCanceled}>Cancel</Button>
+                <Button btnType="Success" clicked={this.props.purchaseContinued}>Continue</Button>
             </Aux>
         );
     }
